@@ -1,115 +1,71 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+title: "Benjamin R. Heiner"
+email: "benheiner7@gmail.com"
+description: >- 
+  Chemist and surface scientist. This site showcases my research, CV, and publications.
+baseurl: ""  # Leave empty for GitHub Pages
+url: "https://yourusername.github.io"  # Replace with your actual GitHub Pages URL if different
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: MM
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
-search: true
+# Author details
+author:
+  name: "Benjamin R. Heiner"
+  avatar: "/assets/images/avatar.jpg"  # Optional: upload your photo here
+  bio: "Placeholder bio — a short 2–3 sentence summary of your background and research interests."
+  location: "United States"
+  links:
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:benheiner7@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/benheiner"
+    - label: "ORCID"
+      icon: "ai ai-orcid"
+      url: "https://orcid.org/0000-0002-2677-5184"
 
-# Build settings
+# Theme settings
+theme: minimal-mistakes-jekyll
+
+# Markdown engine
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+kramdown:
+  input: GFM
 
-include:
-  - _pages
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
+# Enable plugins
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
-  - jemoji
+  - jekyll-sitemap
+  - jekyll-seo-tag
   - jekyll-include-cache
 
-author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+# Collections (optional for organizing content like research)
+collections:
+  research:
+    output: true
+    permalink: /research/:path/
 
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
-
+# Default layout
 defaults:
-  # _posts
   - scope:
       path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
+      type: "pages"
     values:
       layout: single
       author_profile: true
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+# Navigation bar
+nav:
+  - title: "Home"
+    url: /
+  - title: "CV"
+    url: /cv/
+  - title: "Research"
+    url: /research/
+  - title: "Publications"
+    url: /publications/
+  - title: "Contact"
+    url: /contact/
+
+# Logo and favicon (optional)
+logo: "/assets/images/logo.png"
+favicon: "/assets/images/favicon.ico"
+
