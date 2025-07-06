@@ -3,13 +3,13 @@ email: "benheiner7@gmail.com"
 description: >- 
   Chemist and surface scientist. This site showcases my research, CV, and publications.
 baseurl: ""  # Leave empty for GitHub Pages
-url: "https://yourusername.github.io"  # Replace with your actual GitHub Pages URL if different
+url: "https://benheiner.github.io"  # Replace with your actual GitHub Pages URL if different
 
 # Author details
 author:
   name: "Benjamin R. Heiner"
   avatar: "/assets/images/Profile.jpg"
-  bio: "Placeholder bio — a short 2–3 sentence summary of your background and research interests."
+  bio: "###"
   location: "United States"
   links:
     - label: "Email"
@@ -60,8 +60,6 @@ nav:
     url: /cv/
   - title: "Research"
     url: /research/
-  - title: "Publications"
-    url: /publications/
   - title: "Contact"
     url: /contact/
 
