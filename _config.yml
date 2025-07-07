@@ -23,7 +23,7 @@ author:
       url: "https://orcid.org/0000-0002-2677-5184"
 
 # Theme settings
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
 # Markdown engine
 markdown: kramdown
@@ -32,6 +32,7 @@ kramdown:
 
 # Enable plugins
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
