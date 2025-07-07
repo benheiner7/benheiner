@@ -64,6 +64,6 @@ nav:
     url: /contact/
 
 # Logo and favicon (optional)
-logo: "/assets/images/logo.png"
-favicon: "/assets/images/favicon.ico"
+#logo: "/assets/images/logo.png"
+#favicon: "/assets/images/favicon.ico"
 
